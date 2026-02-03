@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    border: 1px solid black;
+}
+
+header {
+    justify-content: space-between;
+}
+
+main {}
+
+    /* events.html */
+
+    .latest-event-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+        .latest-event-card {
+            margin: 10px 25%;
+        }
+
+        .latest-event-img {
+            height: 200px;
+            margin: 10px 25%;
+        }
+
+    .prev-event-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+        .prev-event-card {
+            margin: 10px 25%;
+        }
+
+        .prev-event-img {
+            height: 200px;      
+        }
+
+    /* event-details.html */
+    #myCarousel img {
+        background: darkblue;
+        height: 300px;
+    }
+
+    
+
+footer {}
+
+    .footer-brand {
+        flex: 1;
+    }
+
+    footer nav {
+        flex: 1;
+    }
+
+    .footer-info {
+        flex: 3;
+    }
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
