@@ -1,14 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-darker: #4B4B4B; 
+    --color-dark: #6C6C6C;
+    --color-light: #D9D9D9;
+
+    --border-radius: 5px;
+    --font-family-default: "Albert Sans", system-ui, Helvetica, Arial, sans-serif;
+    --font-family-heading: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
+
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --font-smalltext: 0.875rem;
+    --font-default: 1rem;
+    --font-heading: 1.25rem;
+    --font-title: 2rem;
+
+    font-size: 16px;
+    font-family: var(--font-family-default);
+    line-height: 1.5;
+    font-weight: var(--fw-regular);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
 
-    border: 1px solid black;
+body {
+    padding-top: 1em;
+    width: clamp(320px, 90%, 1200px);
+    margin: 0 auto;
 }
 
 header {
+    align-items: center;
     justify-content: space-between;
+
+    .header-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-brand img {
+        height: 48px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    nav {
+        width: 500px;
+        justify-content: space-evenly;
+    }
+
+    nav a { 
+        display: block;
+        text-decoration: none;
+        color: var(--color-dark);
+    }
+    
+    nav a.current-page-navigation-link { 
+        font-weight: var(--font-weight-bold);
+        color: black;
+    }
+
 }
+
+
 
 main {}
 
