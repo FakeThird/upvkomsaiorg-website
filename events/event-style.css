@@ -72,16 +72,69 @@ header {
         font-weight: var(--font-weight-bold);
         color: black;
     }
+}
+
+
+
+main {
+    margin-block: 64px;
+
+    .latest-event-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+    }
+    
+    .latest-event-title {
+        font-size: var(--font-title);
+    }
+    
+    .latest-event-datetime .small-circle {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-inline: 8px;
+        background-color: var(--color-light);
+    }
+
+    .latest-event-description {
+        margin-block: 32px;
+    }        
+
+    .latest-event-img {
+        object-fit: cover;
+        width: 100%;
+        height: 350px;
+        border-radius: var(--border-radius);
+    }
+
+    .check-event-button {
+        padding: 0.75em 3em;
+        border-radius: var(--border-radius);
+        border: 0;
+        margin-right: auto;
+        background-color: var(--color-darker);
+        color: white;
+        font-weight: var(--font-weight-bold);
+        font-family: var(--font-default);
+        font-size: var(--font-default);
+        cursor: pointer;
+    }
+    
+    .check-event-button:hover {
+        transition: color 0.3s, background-color 0.3s;
+        color: var(--color-darker);
+        background-color: var(--color-light);
+    }
 
 }
 
 
 
-main {}
 
-    /* events.html */
 
-    .latest-event-container {
+    /* .latest-event-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -94,25 +147,28 @@ main {}
             height: 200px;
             margin: 10px 25%;
         }
+*/
 
     .prev-event-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-        .prev-event-card {
+
+
+        /* .prev-event-card {
             margin: 10px 25%;
         }
 
         .prev-event-img {
             height: 200px;      
-        }
-
-    /* event-details.html */
+        } */
+ /*
+   
     #myCarousel img {
         background: darkblue;
         height: 300px;
-    }
+    } */
 
     
 
