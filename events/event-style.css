@@ -15,7 +15,7 @@
 
     --font-smalltext: 0.875rem;
     --font-default: 1rem;
-    --font-heading: 1.25rem;
+    --font-heading: 1.5rem;
     --font-title: 2rem;
 
     font-size: 16px;
@@ -126,6 +126,55 @@ main {
         transition: color 0.3s, background-color 0.3s;
         color: var(--color-darker);
         background-color: var(--color-light);
+    }
+
+    .prev-event-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 64px;
+    }
+    
+    .prev-event-heading {
+        font-size: var(--font-title);
+        font-weight: var(--font-weight-bold);
+    }
+
+    .prev-event-list {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+        justify-items: center;
+        gap: 96px 64px;
+        margin: 32px;
+    }
+
+    .prev-event-card {
+        width: 100%;
+    }
+
+    .prev-event-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .prev-event-title {
+        font-size: var(--font-heading);
+        padding-block-start: 1em;
+    }
+    
+    .prev-event-datetime .small-circle {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-inline: 8px;
+        background-color: var(--color-light);
+    }
+    
+    .prev-event-description {
+        margin-block: 16px;
     }
 
 }
