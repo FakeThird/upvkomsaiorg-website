@@ -37,17 +37,19 @@
 
 body {
     padding-top: 1em;
-    width: clamp(320px, 90%, 1200px);
     margin: 0 auto;
 }
 
 header {
+    width: clamp(320px, 90%, 1200px);
+    margin: 0px auto;
     align-items: center;
     justify-content: space-between;
 
     .header-brand {
         display: flex;
         align-items: center;
+        font-family: var(--font-family-heading);
     }
 
     .header-brand img {
@@ -77,7 +79,8 @@ header {
 
 
 main {
-    margin-block: 64px;
+    width: clamp(320px, 90%, 1200px);
+    margin: 64px auto;
 
     .latest-event-container {
         display: grid;
@@ -181,59 +184,71 @@ main {
 
 
 
-
-
-    /* .latest-event-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-        .latest-event-card {
-            margin: 10px 25%;
-        }
-
-        .latest-event-img {
-            height: 200px;
-            margin: 10px 25%;
-        }
-*/
-
-    .prev-event-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-
-        /* .prev-event-card {
-            margin: 10px 25%;
-        }
-
-        .prev-event-img {
-            height: 200px;      
-        } */
- /*
-   
+/*    
     #myCarousel img {
         background: darkblue;
         height: 300px;
-    } */
-
+    }  */
     
 
-footer {}
+footer {
+    width: var(100%);
+    background-color: var(--color-darker);
+    color: white;
 
-    .footer-brand {
-        flex: 1;
+    .footer-container {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: clamp(320px, 90%, 1200px);
+        margin: 64px auto;
     }
 
-    footer nav {
+    .footer-brand {
+        display: flex;
+        align-items: center;
         flex: 1;
+        font-family: var(--font-family-heading);
+    }
+
+    .footer-brand img {
+        height: 96px;
+        width: 96px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        filter: invert(1);
+    }
+
+    nav a {
+        padding: 0.5em 2rem;
+        color: white;
+        text-decoration: none;
+        font-weight: var(--font-weight-bold);
     }
 
     .footer-info {
         flex: 3;
+        padding: 0.5rem 3rem;
     }
+
+    .footer-info span {
+        padding-block: 0.25rem;
+    }
+
+    .footer-socials {
+        padding-block: 0.5rem;
+    }
+
+
+    .footer-socials img {
+        height: 28px;
+        aspect-ratio: 1/1;
+        margin-right: 16px;
+        filter: invert(1);
+    }
+}
+
+
 
 .flex-col {
     display: flex;
