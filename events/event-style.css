@@ -60,7 +60,7 @@ header {
     }
 
     nav {
-        width: 500px;
+        width: 400px;
         justify-content: space-evenly;
     }
 
@@ -76,12 +76,10 @@ header {
     }
 }
 
-
-
-main {
+body.events main {
     width: clamp(320px, 90%, 1200px);
     margin: 64px auto;
-
+    
     .latest-event-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -110,19 +108,6 @@ main {
         width: 100%;
         height: 350px;
         border-radius: var(--border-radius);
-    }
-
-    .check-event-button {
-        padding: 0.75em 3em;
-        border-radius: var(--border-radius);
-        border: 0;
-        margin-right: auto;
-        background-color: var(--color-darker);
-        color: white;
-        font-weight: var(--font-weight-bold);
-        font-family: var(--font-default);
-        font-size: var(--font-default);
-        cursor: pointer;
     }
     
     .check-event-button:hover {
@@ -179,7 +164,64 @@ main {
     .prev-event-description {
         margin-block: 16px;
     }
+}
 
+body.event-details main {
+    width: clamp(320px, 70%, 1000px);
+    margin: 32px auto 64px;
+    
+    #myCarousel {
+        height: 400px;
+    }
+    #myCarousel .carousel-inner {
+        width: 100%;
+    }
+    #myCarousel .item {
+        width: 100%;
+    }
+    #myCarousel img {
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .displayed-event-container {
+        width: 100%;
+        gap: 48px;
+    }
+
+    .displayed-event-title {
+        font-size: var(--font-title);
+    }
+    
+    .displayed-event-datetime {
+        margin-bottom: 0 !important;
+    }
+
+    .displayed-event-datetime .small-circle {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-inline: 8px;
+        background-color: var(--color-light);
+    }
+
+    .displayed-event-author {
+        color: var(--color-dark);
+    }
+
+    
+    .displayed-event-description {
+        margin-top: 16px;
+    }        
+
+    .displayed-event-img {
+        object-fit: cover;
+        width: 100%;
+        height: 350px;
+        border-radius: var(--border-radius);
+    }
 }
 
 
@@ -239,7 +281,6 @@ footer {
         padding-block: 0.5rem;
     }
 
-
     .footer-socials img {
         height: 28px;
         aspect-ratio: 1/1;
@@ -248,7 +289,18 @@ footer {
     }
 }
 
-
+.check-event-button {
+    padding: 0.675rem 2rem;
+    border-radius: var(--border-radius);
+    border: 0;
+    margin-right: auto;
+    background-color: var(--color-darker);
+    color: white;
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-default);
+    font-size: var(--font-smalltext);
+    cursor: pointer;
+}
 
 .flex-col {
     display: flex;
